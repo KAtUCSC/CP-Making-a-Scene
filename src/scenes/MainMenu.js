@@ -11,6 +11,17 @@ class MainMenu extends Phaser.Scene {
         console.log(`HP: ${this.HP} EXP: ${this.EXP}`)
     }
 
+    preload() {
+        console.log('MainMenu: preload')
+        this.load.path = './assets/img/'
+        this.load.image('tomato', 'tomato.png')
+        this.load.image('grapes', 'grapes.png')
+        this.load.image('kiwi', 'kiwi.png')
+        this.load.image('orange', 'orange.png')
+        this.load.image('pear', 'pear.png')
+        this.load.image('carrot', 'carrot.png')
+    }
+
     create() {
         console.log('MainMenu: create')
 
